@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>My p5play Script</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js"></script>
+    <!-- Version 3 of p5play -->
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+    
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <meta charset="utf-8" />
+    
+    
+  </head>
+  <body>
+    <main>
+    </main>
+      <p class="overlay" id="text"></p>
+      <label class="input-overlay" id="reply">Answer: (num ONLY) </label>
+      <input type="text" class="input-overlay2" id="input"></input>
+      <input type="submit" value="Submit" onclick='problemOneAnswer()'class="input-overlay3">
+      <div class="paper">
+        <div class="lines">
+          <div class="text" contenteditable spellcheck="false" >
+            This is your notebook! <br /><br />
+            Feel free to write stuff down here :D <br /> <br />
+            Physical notebook recommended<br />
+            </div>
+        </div>
+        <div class="holes hole-top"></div>
+        <div class="holes hole-middle"></div>
+        <div class="holes hole-bottom"></div>
+      </div>
+      <script src="sketch.js"></script>
+      <p id="Correct Answers">Correct Answers: 0</p>
+      <p id="Wrong Answers">Wrong Answers: 0</p>
+      <p id="Attempts"></p>
+      <p id="Percent Correct"></p>
+  </body>
+</html>
